@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>实体抽取表单</title>
+</head>
+<body>
+
+<form action="query" method="get">
+    <label for="key1">领域:</label>
+    <select id="key1" name="domain">
+        <option value="">不选</option>
+        <option value="农业农学">农业农学</option>
+        <option value="娱乐">娱乐</option>
+        <option value="教育">教育</option>
+        <option value="法律">法律</option>
+        <option value="旅游出行">旅游出行</option>
+        <option value="金融地产">金融地产</option>
+        <option value="家居生活">家居生活</option>
+        <option value="能源矿产">能源矿产</option>
+        <option value="自然科学">自然科学</option>
+        <option value="时尚美容">时尚美容</option>
+        <option value="医学健康">医学健康</option>
+        <option value="人文社科">人文社科</option>
+        <option value="文化艺术">文化艺术</option>
+        <option value="科技与互联网">科技与互联网</option>
+        <option value="体育运动">体育运动</option>
+        <option value="工业制造">工业制造</option>
+        <option value="军事">军事</option>
+        <option value="社会活动">社会活动</option>
+        <option value="交通运输">交通运输</option>
+        <option value="公共管理">公共管理</option>
+        <option value="情感心理">情感心理</option>
+    </select><br>
+
+    <label for="key2">实体:</label>
+    <input type="text" id="key2" name="entity" placeholder="请输入实体... eg: 数码宝贝"><br>
+
+    <label for="key3">来源:</label>
+    <select id="key3" name="source">
+        <option value="">不选</option>
+        <option value="zhihu_qa">知乎</option>
+        <option value="baike_chinese_new_all">百科</option>
+        <option value="people_daily_new">人民日报</option>
+        <option value="360_doc_personal_library">360个人图书馆</option>
+        <option value="stack_exchange_qa">stack_exchange_qa</option>
+        <option value="mnbvc_law">mnbvc_law</option>
+        <option value="stack_overflow">stack_overflow</option>
+        <option value="gov_safety">政府安全</option>
+        <option value="xuexiqiangguo">学习强国</option>
+        <option value="baijiahao">百家号</option>
+        <option value="wikipedia">维基百科</option>
+        <option value="qikan_chinese">中文期刊</option>
+        <option value="moshadong">百科</option>
+
+    </select><br>
+
+    <label for="key4">模糊匹配:</label>
+    <input type="text" id="key4" name="query_str" placeholder="请输入关键词... eg: EVA 动漫"><br>
+
+    <!-- <label for="key5">实体类型:</label>
+    <select id="key5" name="type">
+        <option value="">不选</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+    </select><br> -->
+
+    <button type="submit">提交</button>
+</form>
+
+</body>
+</html>

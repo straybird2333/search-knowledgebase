@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <style>
+      /* 将表单容器居中 */
+      .container {
+        width: 1200px; /* 增加容器宽度 */
+        margin: 20vh auto; /* 垂直居中 */
+      }
+
+      /* 设置表单样式 */
+      .form {
+        float: left;
+        width: 28%; /* 设置表单宽度 */
+        margin-right: 3%; /* 设置左右间距 */
+      }
+
+      /* 设置输入框的样式 */
+      input[type="text"] {
+        width: calc(100% - 20px); /* 设置输入框宽度 */
+        height: 40px; /* 设置输入框高度 */
+        font-size: 18px; /* 设置输入框文字大小 */
+        margin-bottom: 10px; /* 设置与下一个元素的间距 */
+      }
+
+      /* 设置按钮的样式 */
+      button {
+        width: 100%; /* 设置按钮宽度 */
+        height: 40px; /* 设置按钮高度 */
+        font-size: 18px; /* 设置按钮文字大小 */
+      }
+
+      /* 设置 label 标签的样式 */
+      label {
+        display: block; /* 将 label 元素显示为块级元素 */
+        font-size: 18px; /* 设置文字大小 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <form action="query" method="get">
+          <label for="key1">按照实体进行抽取:</label>
+          <input type="text" id="key1" name='key' placeholder="请输入关键词...eg:数码宝贝">
+          <label for="domain1">可选领域，可以支持的domain:农业农学, 娱乐, 教育, 法律, 旅游出行, 金融地产, 家居生活, 能源矿产, 自然科学, 时尚美容, 医学健康, 人文社科, 文化艺术, 科技与互联网, 体育运动, 工业制造, 军事, 社会活动,交通运输,公共管理,情感心理</label>
+          <input type="text" id="domain1" name='domain' placeholder="请输入domain...（可选）">
+          <button type="submit">Go!</button>
+        </form>
+      </div>
+      <div class="form">
+        <form action="query_1" method="get">
+          <label for="key2">文本检索bm25:</label>
+          <input type="text" id="key2" name='key' placeholder="请输入关键词...eg:EVA 动漫">
+          <label for="domain2">可选领域</label>
+          <input type="text" id="domain2" name='domain' placeholder="请输入domain...（可选）">
+          <button type="submit">Go!</button>
+        </form>
+      </div>
+      <div class="form">
+        <form action="query_2" method="get">
+          <label for="domain3">抽取领域</label>
+          <input type="text" id="domain3" name='domain' placeholder="请输入domain...（可选）">
+          <button type="submit">Go!</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
